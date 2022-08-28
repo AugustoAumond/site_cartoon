@@ -6,7 +6,7 @@ import Sliders from "../../material/sliders/Sliders";
 function Lancamentos(){
     const settings = {
         space: 50,
-        slides: 6
+        slides: 5
     }
 
     return(
@@ -25,4 +25,10 @@ const DivLancamentos = styled.div`
     height: 100%;
     width: 100%;
     max-width: 1420px;
+
+    @media (max-width: 700px){
+        #fundo {
+            width: 70px;
+            height: 140px;
+        }
 `

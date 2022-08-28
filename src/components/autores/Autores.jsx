@@ -33,4 +33,11 @@ const DivAutores = styled.div`
         height: 110px;
         background: white;
     }
+
+    @media (max-width: 800px){
+       #fundo {
+        width: 80px;
+        height: 80px;
+       } 
+    }
 `

@@ -3,12 +3,11 @@ import styled from "styled-components"
 import Logo from "./Logo/Logo";
 import User from "./User/User";
 
-
 function Menu(){
     return (
         <DivMenu>
             <Logo/>
-            
+
             <User/>
         </DivMenu>
     )

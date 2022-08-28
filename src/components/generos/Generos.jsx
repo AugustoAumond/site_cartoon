@@ -6,7 +6,7 @@ import Sliders from "../../material/sliders/Sliders";
 function Generos (){
     const settings = {
         space: 10,
-        slides: 5
+        slides: 4
     }
 
     const categorias = [
@@ -64,7 +64,7 @@ margin-top: 30px;
     #divtitles {
         justify-content: center;
         width: 30%;
-        height: 90px;;
+        height: 90px;
     }
 
     #divsliders {
@@ -73,5 +73,17 @@ margin-top: 30px;
 
     .swiper {
         width: 100%;
+    }
+
+    @media (max-width: 800px){
+        #fundo {
+            width: 70px;
+            height: 140px;
+            margin: unset;
+        }
+
+        #divtitles {
+            height: 40px;
+        }
     }
 `
