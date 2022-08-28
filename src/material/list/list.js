@@ -1,0 +1,39 @@
+
+export const obras = [
+    {
+        name:'a'
+    },
+    {
+        name:'a'
+    },
+    {
+        name:'a'
+    },
+    {
+        name:'a'
+    },
+    {
+        name:'a'
+    },
+    {
+        name:'a'  
+    },
+    {
+        name:'a'
+    },
+    {
+        name:'a'
+    },
+    {
+        name:'a'   
+    },
+    {
+        name:'a'
+    },
+    {
+        name:'a'
+    },
+    {
+        name:'a' 
+    }
+]
