@@ -3,7 +3,7 @@ import styled from "styled-components"
 function Logo(){
     return(
         <DivLogo>
-            <img src='./../../../public/logo_site-1.png' alt="" />
+            <img src='./logo_site-1.png' alt="" />
             <p>MARCA</p>
         </DivLogo>
     )

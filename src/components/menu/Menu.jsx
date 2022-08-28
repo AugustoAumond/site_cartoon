@@ -8,6 +8,7 @@ function Menu(){
     return (
         <DivMenu>
             <Logo/>
+            
             <User/>
         </DivMenu>
     )
