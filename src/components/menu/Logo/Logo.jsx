@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components"
 
 function Logo(){
     return(
         <DivLogo>
-            <img src='./logo_site-1.png' alt="" />
+            <Link to={'/'}><img src='./logo_site-1.png' alt="" /></Link>
             <p>MARCA</p>
         </DivLogo>
     )

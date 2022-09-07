@@ -2,11 +2,22 @@ import styled from "styled-components";
 
 import Titles from "../../material/titles/Titles";
 import Sliders from "../../material/sliders/Sliders";
+import { useState } from "react";
 
 function Generos (){
+    const [width, setWidth] = useState(4);
+
+    setInterval(() =>{
+        if (window.innerWidth < 550){
+            setWidth(3)
+        } else {
+            setWidth(4);
+        }}, [500])
+    
+
     const settings = {
         space: 10,
-        slides: 4
+        slides: width
     }
 
     const categorias = [
@@ -30,8 +41,7 @@ function Generos (){
     }
 ]
 
-    return (
-        
+    return (   
         <DivGeneros>
             {categorias.map((categ, index)=>(
             <div key={index} id="column">
@@ -85,5 +95,21 @@ margin-top: 30px;
         #divtitles {
             height: 40px;
         }
+    }
+
+    @media (max-width: 500px){
+        section {
+            flex-direction: column;
+        }
+
+        #divtitles {
+            width: 100%;
+        }
+
+        #divsliders {
+            width: 100%;
+            margin-top: 10px;
+        }
+
     }
 `

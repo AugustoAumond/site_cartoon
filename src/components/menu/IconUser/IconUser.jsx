@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
+
 import {FaUserCircle} from 'react-icons/fa'
 
 function User(){
     return (
         <DivUser>
-            <input type="text" />
-            <FaUserCircle id="icon"/> 
+           <Link to={'/login'}> <FaUserCircle id="icon"/> </Link>
         </DivUser>
     )
 }
@@ -20,15 +21,9 @@ color: white;
 margin-right: 10px;
 
     #icon {
+        text-decoration: none;
+        color: white;
         width: 30px;
-        height: 30px;
-    }
-
-    input {
-        border-radius: 10px;
-        padding: 5px;
-        margin: 5px;
-        width: 150px;
         height: 30px;
     }
 `

@@ -11,7 +11,7 @@ function Button(props){
 export default Button;
 
 const DivButton = styled.button`
-    border-radius: 50px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;

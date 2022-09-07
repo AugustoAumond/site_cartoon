@@ -1,12 +1,22 @@
 import styled from "styled-components";
+import { useState } from "react";
 
 import Titles from "../../material/titles/Titles";
 import Sliders from "../../material/sliders/Sliders";
 
 function Originais (){
+    const [width, setWidth] = useState(3);
+
+    setInterval(() =>{
+        if (window.innerWidth < 550){
+            setWidth(2)
+        } else {
+            setWidth(3);
+        }}, [500])
+
     const settings = {
-        space: 5,
-        slides: 3
+        space: 10,
+        slides: width
     }
 
     return(

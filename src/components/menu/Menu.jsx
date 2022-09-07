@@ -1,14 +1,17 @@
 import styled from "styled-components"
 
 import Logo from "./Logo/Logo";
-import User from "./User/User";
+import Nav from "./nav/Nav";
+import IconUser from "./IconUser/IconUser";
 
 function Menu(){
     return (
         <DivMenu>
             <Logo/>
 
-            <User/>
+            <Nav/>
+
+            <IconUser/>
         </DivMenu>
     )
 }
