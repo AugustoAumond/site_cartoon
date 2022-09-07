@@ -15,7 +15,7 @@ function Originais (){
         }}, [500])
 
     const settings = {
-        space: 10,
+        space: 0,
         slides: width
     }
 
@@ -33,8 +33,9 @@ const DivOriginais = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 250px;
+    height: 100%;
     width: 100%;
+    min-width: 300px;
     max-width: 1420px;
     margin-top: 50px;
 

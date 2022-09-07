@@ -15,7 +15,7 @@ function Lancamentos(){
         }}, [500])
 
     const settings = {
-        space: 10,
+        space: 0,
         slides: width
     }
 
@@ -34,6 +34,7 @@ const DivLancamentos = styled.div`
     flex-direction: column;
     height: 100%;
     width: 100%;
+    min-width: 300px;
     max-width: 1420px;
     cursor: pointer;
 

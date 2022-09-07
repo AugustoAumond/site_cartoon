@@ -16,7 +16,7 @@ function Generos (){
     
 
     const settings = {
-        space: 10,
+        space: 0,
         slides: width
     }
 
@@ -60,6 +60,7 @@ export default Generos;
 const DivGeneros = styled.div`
 padding: 30px;
 margin-top: 30px;
+min-width: 300px;
 
     #column {
         display: flex;
@@ -98,6 +99,10 @@ margin-top: 30px;
     }
 
     @media (max-width: 500px){
+        margin: 0 auto;
+        padding: unset;
+        margin-left: 5px;
+
         section {
             flex-direction: column;
         }

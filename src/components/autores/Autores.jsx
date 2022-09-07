@@ -15,7 +15,7 @@ function Autores(){
         }}, [500])
 
     const settings = {
-        space: 10,
+        space: 0,
         slides: width
     }
 
@@ -32,10 +32,14 @@ export default Autores;
 const DivAutores = styled.div`
     display: flex;
     flex-direction: column;
-    height: 250px;
+    height: 100%;
     width: 100%;
+    min-width: 300px;
     max-width: 1420px;
-    z-index: 2;
+
+    #divsliders {
+        height: 175px;
+    }
 
     #fundo {
         border-radius: 150px;
