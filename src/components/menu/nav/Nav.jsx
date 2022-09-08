@@ -56,7 +56,10 @@ list-style: none;
 width: 60%;
 
     li {
-        margin-left: 10px;
         cursor: pointer;
+    }
+
+    @media (max-width: 650px){
+        display: none;
     }
 `

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 import MenuUser from "../../components/user/menuUser/MenuUser";
-import Button from './../../material/buttons/Button';
+import Botoes from "../../components/user/botoes/Botoes";
 import Capa from "../../material/capa/Capa";
 import Trofeus from "../../components/user/trofeus/Trofeus";
 import Sliders from "../../material/sliders/Sliders";
@@ -20,11 +20,7 @@ function User(){
 
             <Capa/>
 
-            <Botoes>
-                <Button text={'CURTIR'}/>
-
-                <Button text={'MENSAGEM'}/>
-            </Botoes>
+            <Botoes/>
 
             <Trofeus/>
 
@@ -47,14 +43,6 @@ const DivUser = styled.div`
     min-height: 100vh;
     margin: 0 auto;
 
-        #button {
-            color: white;
-            background: gray;
-            width: 150px;
-            height: 35px;
-            border: white;
-        }
-
         #obrasautorais {
             width: 70%;
             margin: 0 auto;
@@ -76,12 +64,3 @@ const DivUser = styled.div`
             transition: 0.5s;
         }
 `
-
-    const Botoes = styled.div`
-        position: relative;
-        top: 30px;
-        width: 60%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-    ` 
