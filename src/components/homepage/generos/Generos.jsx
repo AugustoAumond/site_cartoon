@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import Titles from "../../material/titles/Titles";
-import Sliders from "../../material/sliders/Sliders";
+import Titles from "../../../material/titles/Titles";
+import Sliders from "../../../material/sliders/Sliders";
 import { useState } from "react";
 
 function Generos (){
@@ -9,9 +9,9 @@ function Generos (){
 
     setInterval(() =>{
         if (window.innerWidth < 550){
-            setWidth(3)
+            setWidth(3.5)
         } else {
-            setWidth(4);
+            setWidth(4.5);
         }}, [500])
     
 

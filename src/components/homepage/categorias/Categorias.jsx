@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import Button from "../../material/buttons/Button";
+import Button from "../../../material/buttons/Button";
 
 function Categorias(){
 

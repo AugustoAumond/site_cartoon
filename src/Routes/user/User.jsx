@@ -6,6 +6,7 @@ import Capa from "../../material/capa/Capa";
 import Trofeus from "../../components/user/trofeus/Trofeus";
 import Sliders from "../../material/sliders/Sliders";
 import Titles from "../../material/titles/Titles";
+import Galeria from "../../components/user/galeria/Galeria";
 
 
 function User(){
@@ -30,7 +31,7 @@ function User(){
                 <Sliders settings={settings}/>
             </div>
             
-
+            <Galeria/>
         </DivUser>
     )
 }

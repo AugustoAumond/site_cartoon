@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Categorias from "../../categorias/Categorias";
+import Categorias from "../../../homepage/categorias/Categorias";
 
 
 function Nav(){

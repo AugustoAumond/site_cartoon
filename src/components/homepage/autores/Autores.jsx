@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { useState } from "react";
 
-import Titles from "../../material/titles/Titles";
-import Sliders from "../../material/sliders/Sliders";
+import Titles from "../../../material/titles/Titles";
+import Sliders from "../../../material/sliders/Sliders";
 
 function Autores(){
     const [width, setWidth] = useState(6);
 
     setInterval(() =>{
         if (window.innerWidth < 550){
-            setWidth(3)
+            setWidth(3.5)
         } else {
-            setWidth(6);
+            setWidth(6.5);
         }}, [500])
 
     const settings = {

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Logo from "../../components/menu/Logo/Logo";
-import IconUser from "../../components/menu/IconUser/IconUser";
+import IconUser from './../../components/menu/homepage/IconUser/IconUser';
 
 import Button from "../../material/buttons/Button";
 import Inputs from "../../material/inputs/Inputs";

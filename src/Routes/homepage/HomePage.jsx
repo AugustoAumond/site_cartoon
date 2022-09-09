@@ -2,12 +2,12 @@ import './App.css';
 import styled from 'styled-components';
 
 import Menu from '../../components/menu/Menu';
-import Destaques from '../../components/destaques/Destaques';
-import Categorias from '../../components/categorias/Categorias';
-import Lancamentos from '../../components/lancamentos/Lancamentos';
-import Originais from '../../components/originais/Originais';
-import Autores from '../../components/autores/Autores';
-import Generos from '../../components/generos/Generos';
+import Destaques from '../../components/homepage/destaques/Destaques';
+import Categorias from '../../components/homepage/categorias/Categorias';
+import Lancamentos from '../../components/homepage/lancamentos/Lancamentos';
+import Originais from '../../components/homepage/originais/Originais';
+import Autores from '../../components/homepage/autores/Autores';
+import Generos from '../../components/homepage/generos/Generos';
 
 function Home() {
 

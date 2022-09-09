@@ -1,8 +1,8 @@
 import styled from "styled-components"
 
 import Logo from "./Logo/Logo";
-import Nav from "./nav/Nav";
-import IconUser from "./IconUser/IconUser";
+import Nav from "./homepage/nav/Nav";
+import IconUser from './homepage/IconUser/IconUser';
 
 function Menu(){
     return (
