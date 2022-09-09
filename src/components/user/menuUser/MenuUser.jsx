@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import Logo from './../../menu/Logo/Logo';
-import Message from "../../menu/user/message/Message";
+import Logo from "../../menu/Logo/Logo";
+import Message from './message/Message'
 import Button from "../../../material/buttons/Button";
 
 function MenuUser(){

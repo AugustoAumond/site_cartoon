@@ -9,9 +9,9 @@ function Autores(){
 
     setInterval(() =>{
         if (window.innerWidth < 550){
-            setWidth(3.5)
+            setWidth(2.5)
         } else {
-            setWidth(6.5);
+            setWidth(5.5);
         }}, [500])
 
     const settings = {
