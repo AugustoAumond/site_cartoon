@@ -5,7 +5,8 @@ function Logo(){
     return(
         <DivLogo>
             <Link to={'/'}><img src='./logo_site-1.png' alt="" /></Link>
-            <p>MARCA</p>
+
+            <img id="nome" src="./rabisconome.png" alt="" />
         </DivLogo>
     )
 }
@@ -20,5 +21,10 @@ color: white;
     img {
         width: 75px;
         height: 75px;
+    }
+
+    #nome {
+        width: 110px;
+        height: 85px;
     }
 `
