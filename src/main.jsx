@@ -6,6 +6,7 @@ import Home from "./Routes/homepage/HomePage";
 import Login from './Routes/login/Login';
 import Cadastrar from './Routes/cadastrar/Cadastrar';
 import User from './Routes/user/User';
+import Obras from './Routes/obras/Obras';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -13,11 +14,17 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
             <Route path="/" element={<Home />}>
             </Route>
+
             <Route path="/login" element={<Login />}>
             </Route>
+
             <Route path="/cadastrar" element={<Cadastrar />}>
             </Route>
+
             <Route path="/user" element={<User />}>
+            </Route>
+
+            <Route path="/obras" element={<Obras />}>
             </Route>
         </Routes>
     </Router>

@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import Categorias from "../../../homepage/categorias/Categorias";
-
 
 function Nav(){
     function Lancamentos(){

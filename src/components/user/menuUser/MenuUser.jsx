@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-import Logo from "../../menu/Logo/Logo";
-import Message from './message/Message'
+import Logo from "../../../material/menu/Logo/Logo";
+import Message from './../../../material/message/Message'
 import Button from "../../../material/buttons/Button";
 
 function MenuUser(){
@@ -10,10 +10,10 @@ function MenuUser(){
             <Logo/>
 
             <div id='btnmsg'>
-                    <Button text="PUBLICAR OBRA"/>
+                <Button text="PUBLICAR OBRA"/>
 
-                    <Message/>
-                </div>  
+                <Message/>
+            </div>  
         </DivMenu>
     )
 }
