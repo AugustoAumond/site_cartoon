@@ -8,6 +8,7 @@ import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
 import {obras} from './../list/list';
+import { Link } from "react-router-dom";
 
 function Sliders(props){
     const settings = props.settings;
@@ -21,8 +22,10 @@ function Sliders(props){
             pagination={{ clickable: true }}>
                 {obras.map((obra, index)=>(
                     <SwiperSlide key={index}>
-                        <div id="fundo">
-                        </div>
+                        <Link to={`/obras/${obra.capitulo}`}>
+                            <div id="fundo">
+                            </div>
+                        </Link>
                     </SwiperSlide>
                 ))}
             </Swiper>

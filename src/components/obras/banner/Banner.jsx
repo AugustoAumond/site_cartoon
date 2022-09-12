@@ -30,7 +30,7 @@ const DivBanner = styled.div`
     margin: 0 auto;
 
     #img {
-        background: url('./foto_grande.jpg');
+        background: url('/foto_grande.jpg');
         max-width: 1420px;
         position: absolute;
         height: 350px;

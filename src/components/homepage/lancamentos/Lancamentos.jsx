@@ -36,7 +36,6 @@ const DivLancamentos = styled.div`
     width: 100%;
     min-width: 300px;
     max-width: 1420px;
-    cursor: pointer;
 
     @media (max-width: 700px){
         #fundo {

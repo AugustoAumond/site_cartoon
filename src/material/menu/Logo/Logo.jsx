@@ -4,9 +4,9 @@ import styled from "styled-components"
 function Logo(){
     return(
         <DivLogo>
-            <Link to={'/'}><img src='./logo_site-1.png' alt="" /></Link>
+            <Link to={'/'}><img src='/logo_site-1.png' alt="" /></Link>
 
-            <img id="nome" src="./rabisconome.png" alt="" />
+            <img id="nome" src="/rabisconome.png" alt="" />
         </DivLogo>
     )
 }
