@@ -1,13 +1,11 @@
 import styled from "styled-components";
 
-import { Link } from "react-router-dom";
-
 import {FaUserCircle} from 'react-icons/fa'
 
 function User(){
     return (
-        <DivUser>
-           <Link to={'/login'}> <FaUserCircle id="icon"/> </Link>
+        <DivUser >
+           <FaUserCircle id="icon"/>
         </DivUser>
     )
 }

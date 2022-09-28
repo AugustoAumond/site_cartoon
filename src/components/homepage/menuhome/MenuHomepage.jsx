@@ -1,5 +1,7 @@
 import styled from "styled-components"
 
+import { Link } from "react-router-dom";
+
 import Logo from "../../../material/menu/Logo/Logo";
 import Nav from "../../../material/menu/nav/Nav";
 import IconUser from '../../../material/menu/IconUser/IconUser';
@@ -11,7 +13,7 @@ function Menu(){
 
             <Nav/>
 
-            <IconUser/>
+            <Link to={'/login'}><IconUser/></Link>
         </DivMenu>
     )
 }

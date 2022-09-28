@@ -12,6 +12,15 @@ import { Link } from "react-router-dom";
 
 function Sliders(props){
     const settings = props.settings;
+    const list = props.list ? props.list : obras;
+
+    function tenObras(){
+        let newList = [];
+        for (let index = 0; index < 10; index++) {
+            newList.push(list[index]);  
+        }
+        return newList;
+    }
 
     return (
         <DivSliders id="divsliders">
@@ -20,10 +29,12 @@ function Sliders(props){
             spaceBetween={settings.space}
             slidesPerView={settings.slides}
             pagination={{ clickable: true }}>
-                {obras.map((obra, index)=>(
+                {tenObras().map((obra, index)=>(
                     <SwiperSlide key={index}>
-                        <Link to={`/obras/${obra.capitulo}`}>
+                        <Link to={`/obras/${obra.id}`}>
                             <div id="fundo">
+                                <img src="" alt="" />
+                                {console.log(obra.url)}
                             </div>
                         </Link>
                     </SwiperSlide>
@@ -60,5 +71,9 @@ const DivSliders = styled.div`
         height: 170px;
         border-radius: 20px;
         background: gray;
+    }
+
+    img {
+        width: 100%;
     }
 `

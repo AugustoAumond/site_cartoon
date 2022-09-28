@@ -1,11 +1,25 @@
 import styled from "styled-components";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+import axios from "axios";
 
 import Titles from "../../../material/titles/Titles";
 import Sliders from "../../../material/sliders/Sliders";
 
 function Lancamentos(){
+    const [list, setList] = useState();
     const [width, setWidth] = useState(5);
+
+    useEffect(()=>{
+         axios.get('https://api.themoviedb.org/3/trending/movie/week?api_key=fdec3cf017f52d95fdcd581919da1255').
+        then((response)=>{
+            setList(response.data.results);
+          console.log(response.data.results)
+        })
+        .catch(err=>{
+          console.log(err);
+        })
+      },[])
 
     setInterval(() =>{
         if (window.innerWidth < 550){
@@ -23,7 +37,7 @@ function Lancamentos(){
         <DivLancamentos>
             <Titles titles={'Lançamentos'}/>
 
-            <Sliders settings={settings}/>
+            <Sliders list={list} settings={settings}/>
         </DivLancamentos>
     )
 }

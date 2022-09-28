@@ -8,6 +8,8 @@ import Button from "../../material/buttons/Button";
 import Inputs from "../../material/inputs/Inputs";
 
 function Login (){
+    const user = 'user';
+    
     return(
         <DivLogin>
             <div id="menu">
@@ -20,7 +22,7 @@ function Login (){
 
                 <Inputs text={'Senha'}/>
 
-                <Link to={'/user'}><Button text={'Entrar'}/></Link>
+                <Link to={`/feed/${user}`}><Button text={'Entrar'}/></Link>
 
                 <section>
                     <strong id="forgoten">Esqueceu sua senha?</strong>

@@ -5,6 +5,7 @@ import Login from './Routes/login/Login';
 import Cadastrar from './Routes/cadastrar/Cadastrar';
 import User from './Routes/user/User';
 import Obras from './Routes/obras/Obras';
+import Feed from './Routes/feed/Feed';
 
 function MainRoutes (){
     return (
@@ -23,6 +24,9 @@ function MainRoutes (){
             </Route>
 
             <Route path="/obras/:id" element={<Obras />}>
+            </Route>
+            
+            <Route path="/feed/:user" element={<Feed />}>
             </Route>
         </Routes>
     </Router>

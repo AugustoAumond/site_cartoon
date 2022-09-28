@@ -1,6 +1,8 @@
 import './App.css';
 import styled from 'styled-components';
 
+import axios from 'axios';
+
 import Menu from '../../components/homepage/menuhome/MenuHomepage';
 import Destaques from '../../components/homepage/destaques/Destaques';
 import Categorias from '../../components/homepage/categorias/Categorias';
@@ -10,7 +12,7 @@ import Autores from '../../components/homepage/autores/Autores';
 import Generos from '../../components/homepage/generos/Generos';
 
 function Home() {
-
+  
   return (
       <DivHome> 
         <Menu/>
